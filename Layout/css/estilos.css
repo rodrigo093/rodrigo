@@ -11,7 +11,7 @@ body{
 }
 
 .contenedor{
-    background: #EE2677;
+    background: #eb934b;
     max-width: 1000px;
     margin:20px auto;
     overflow: hidden;
@@ -37,11 +37,11 @@ header{
  }
 header nav a:hover{
 
-    background: #E87EA1;
+    background: #dddddd;
 }
 
 main{
-    background: #E87EA1;
+    background: #fcf7f9;
     width: 75%;
     float: left;
 
@@ -70,7 +70,7 @@ article p{
 
 aside{
 
-    background:#EE2677;
+    background:#eb934b;
     width: 25%;
     float: left;
     line-height: 25px;
@@ -101,7 +101,7 @@ aside{
 
 .enlaces li a:hover{
 
-    background: #E87EA1;
+    background: #b63711;
 }
 
 footer{
