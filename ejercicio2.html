@@ -1,0 +1,46 @@
+<html>
+ 
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Calculo de factorial de un número. Creado por Luis email luis.1966@yahoo.es</title>
+</head><script language=javascript>
+ 
+function factorial(){
+numero1=1;
+numero=eval(f1.numeroelegido.value);
+ 
+for(i=1;i<=numero;i++)
+ 
+numero1=numero1*i;
+ 
+valor.innerHTML=numero1;
+}
+ 
+</script>
+ 
+<body ><form name=f1>
+ 
+<div style="position: absolute; width: 376px; height: 45px; z-index: 1; left: 143px; top: 73px" id="layer1">
+	<table border="1" width="100%">
+		<tr>
+			<td width="39%">
+			<p align="center"><font face="Arial">introducir numero</font></td>
+			<td width="57%">
+			<p align="center">
+			<font size="3">
+			<input type="text" name="numeroelegido" size="4" value="10" style="font-size: 24pt; font-family: arial; text-align: center">
+			<input type="button" value="calcular" name="B1" onclick='factorial()'></font></td>
+		</tr>
+		<tr>
+			<td width="39%" align="center">
+			<p align="center"><font face="Arial">resultado</font></td>
+			<td width="57%" align="center">
+			<b><font face="Arial" size="6" id=valor>.</font></b></td>
+		</tr>
+		</table>
+</div>
+</form>
+</body>
+ 
+</html>

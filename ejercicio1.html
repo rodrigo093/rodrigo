@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function  EntraData()  {
+        let  txt  =  document.getElementById("tempEntrada"); let  temp  =  parseInt(txt.value);
+        return  temp;
+        }
+        
+        function  EscriuData(nomZona,  text)  { document.getElementById(nomZona).innerHTML  =  text;
+        }
+        
+        
+        function  Grados()  {
+        let  temp  =  EntraData();
+        let  temp2  =  ((temp  -  32)  /  1.8); EscriuData('Zona1'); Clima(temp);
+        }
+        
+        
+        function  Clima(temperatura)  { let  cadena="-";
+        if  ((temperatura  >=  -10)  &&  (temperatura  <= 15))     cadena  ="Frio";
+        if  ((temperatura  >=  16)  &&  (temperatura  <= 25))     cadena  ="Templado"; 
+        if  ((temperatura  >=  26)  &&  (temperatura  <=  40))  cadena  ="Calor";
+        if  (cadena=="-")     cadena  =  "Clima  desconocido"; EscriuData('Zona1',  cadena);
+        }
+        
+        </script>
+    
+</body>
+<h2 style="color: rgb(201, 44, 16)">
+    El clima segun la temperatura
+</h2>
+    <input  type="text"  name="tempEntrada"  id="tempEntrada">
+    <input  type="button"  value="Ver clima"  onClick="Grados()"><br>
+    <div  id="Zona1"></div>
+
+</html>
+<script>
